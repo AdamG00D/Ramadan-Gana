@@ -63,7 +63,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (name) params.set("name", name);
     params.set("type", type);
     params.set("greeting", encodeURIComponent(greeting));
-    const url = `${location.origin}${location.pathname.replace(/index.html$/, "greeting.html")}?${params.toString()}`;
+    // دعم المسارات الفرعية مثل GitHub Pages
+    let base = location.origin + location.pathname.replace(/\/index.html$/, "/");
+    if (!base.endsWith("/")) base += "/";
+    const url = `${base}greeting.html?${params.toString()}`;
     resultLink.value = url;
     resultDiv.style.display = "flex";
   });
