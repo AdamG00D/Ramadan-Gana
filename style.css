@@ -1,0 +1,618 @@
+@media (max-width: 600px) {
+  /* تصغير عرض عناصر اختيار النوع واختيار نوع التهنئة */
+  .select-group, .radio-group {
+    width: 80vw !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+    margin: 0 auto 8px auto !important;
+    justify-content: center !important;
+  }
+  .radio-group label.radio-opt {
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 4px !important;
+  }
+  .select-group label {
+    min-width: 48px !important;
+    font-size: 1rem !important;
+  }
+  #recipientType, #defaultGreetingSelect {
+    width: 60vw !important;
+    max-width: 220px !important;
+    min-width: 0 !important;
+    font-size: 1rem !important;
+  }
+  main.card h1.calligraphy {
+    font-size: 2.1rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 14px !important;
+    margin-top: 18px !important;
+    padding: 0 2px !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px !important;
+    align-self: flex-start !important;
+    width: 100%;
+    text-align: center !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  main.card {
+    justify-content: center !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0; left: 0; right: 0; bottom: 0;
+    min-height: 100vh;
+    height: 100vh !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    z-index: 10;
+  }
+  /* زر البداية الدائري */
+  #startBtn {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 50% !important;
+    font-size: 1.45rem !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1.1 !important;
+    font-weight: bold !important;
+  }
+  /* الفوانيس */
+  .lantern {
+    width: 32px !important;
+    height: 58px !important;
+    border-radius: 7px !important;
+  }
+  .lantern::before {
+    width: 6px !important;
+    height: 12px !important;
+    border-radius: 3px !important;
+  }
+  .lantern::after {
+    width: 18px !important;
+    height: 5px !important;
+  }
+  /* نص التهنئة */
+  .msg {
+    padding: 10px 4px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+  }
+  .line1 {
+    font-size: 1.35rem !important;
+    margin-bottom: 7px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    line-height: 1.5 !important;
+  }
+  /* الخط العام */
+  body, input, select, button, .radio-opt {
+    font-size: 1.12rem !important;
+  }
+  /* الأزرار */
+  button, #createNewBtn, #audioBtn, #generateBtn, #copyResultBtn, #showGreetingBtn {
+    font-size: 0.95rem !important;
+    padding: 4px 0 !important;
+    height: 28px !important;
+    min-height: 0 !important;
+    border-radius: 7px !important;
+    margin-top: 2px !important;
+  }
+  /* إزالة الجزء الفاتح أسفل الصفحة نهائياً */
+  .vignette {
+    background: none !important;
+  }
+  /* تحسين توافق الكارت */
+  .card {
+    max-width: 99vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+@media (max-width: 600px) {
+  main.card {
+    padding: 4px !important;
+    gap: 6px !important;
+    align-items: center !important;
+    max-width: 98vw !important;
+  }
+  main.card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 98vw;
+  }
+  .calligraphy {
+    font-size: clamp(25px, 5vw, 24px) !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+  }
+  .msg {
+    padding: 6px 2px !important;
+    border-radius: 9px !important;
+    text-align: center !important;
+  }
+  .line1 {
+    font-size: clamp(18px, 3.5vw, 16px) !important;
+    margin-bottom: 5px !important;
+    text-align: center !important;
+  }
+  input, select, button {
+    font-size: 0.92rem !important;
+    padding: 6px 4px !important;
+    border-radius: 7px !important;
+    width: 80vw !important;
+    max-width: 80vw !important;
+    min-width: 0 !important;
+    text-align: center !important;
+  }
+  .controls {
+    gap: 5px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .radio-opt {
+    padding: 5px 7px !important;
+    font-size: 0.92rem !important;
+    border-radius: 7px !important;
+    text-align: center !important;
+  }
+  #defaultGreetingSelect {
+    font-size: 0.92rem !important;
+    padding: 6px 4px !important;
+    text-align: center !important;
+  }
+  #resultLink {
+    font-size: 0.92rem !important;
+    padding: 5px 4px !important;
+    width: 80vw !important;
+    max-width: 80vw !important;
+    text-align: center !important;
+  }
+  #createNewBtn, #audioBtn, #generateBtn, #copyResultBtn, #showGreetingBtn {
+    width: 100% !important;
+    min-width: 0 !important;
+    font-size: 0.92rem !important;
+    padding: 7px 0 !important;
+    margin-top: 4px !important;
+    text-align: center !important;
+  }
+}
+/* مسافة بين عناصر الصفحة الرئيسية */
+main.card form > .controls,
+main.card form > .radio-group,
+main.card form > #defaultGreetings,
+main.card form > #customGreetingDiv {
+  margin-bottom: 22px;
+}
+main.card form > .controls:last-child,
+main.card form > #resultDiv {
+  margin-bottom: 0;
+}
+/* تحسين شكل select والراديو */
+.select-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+select {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--gold2);
+  background: linear-gradient(90deg, #fff8 0%, var(--card) 100%);
+  color: var(--deep2);
+  font-size: 1rem;
+  font-family: CairoLocal, system-ui, sans-serif;
+  outline: none;
+  transition: border 0.18s;
+}
+select:focus {
+  border: 1.5px solid var(--gold);
+}
+.radio-group {
+  gap: 22px !important;
+  margin-bottom: 8px;
+}
+.radio-opt {
+  background: rgba(247,211,122,.13);
+  border-radius: 12px;
+  padding: 8px 18px;
+  border: 1.5px solid var(--gold2);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(247,211,122,.08);
+  transition: background 0.18s, border 0.18s, color 0.18s;
+}
+.radio-opt input[type="radio"] {
+  accent-color: var(--gold);
+  margin-left: 8px;
+}
+.radio-opt:hover, .radio-opt:focus-within {
+  background: rgba(247,211,122,.22);
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+/* تخصيص صفحة الإنشاء وصفحة التهنئة */
+#createNewBtn {
+  width: 120px;
+  height: 44px;
+  border-radius: 22px;
+  border: 2px solid var(--gold);
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold2) 100%);
+  color: var(--deep);
+  font-size: 1.1rem;
+  font-family: CairoLocal, system-ui, sans-serif;
+  font-weight: bold;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+#createNewBtn:hover {
+  transform: scale(1.04);
+}
+
+#resultDiv {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#resultLink {
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--gold2);
+  padding: 8px 10px;
+  background: #fff8;
+  color: var(--deep2);
+}
+
+@media (max-width: 520px) {
+  #createNewBtn {
+    width: 90vw;
+    height: 40px;
+    font-size: 1rem;
+  }
+  #resultLink {
+    width: 90vw !important;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 520px) {
+  #startOverlay {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #startBtn {
+    width: 80px;
+    height: 80px;
+    font-size: 1.1rem;
+    padding: 0;
+  }
+}
+/* زر البداية الدائري */
+
+#startOverlay {
+  position: fixed;
+  inset: 0;
+  background: #06152a;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+  /* إخفاء كل ما خلف الزر تماماً */
+}
+
+#startOverlay.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#startBtn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  color: var(--deep);
+  font-size: 1.5rem;
+  font-family: CairoLocal, system-ui, sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 32px 0 rgba(247,211,122,0.18), 0 4px 24px 0 rgba(6,21,42,0.18);
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+  outline: none;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff7;
+}
+#startBtn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 44px 0 rgba(247,211,122,0.28), 0 8px 32px 0 rgba(6,21,42,0.22);
+}
+/* خط عربي جميل (اختياري) */
+@font-face{
+  font-family: "CairoLocal";
+  src: local("Cairo");
+}
+:root{
+  --gold: #f7d37a;
+  --gold2:#d9a84a;
+  --deep:#06152a;
+  --deep2:#0a2a4a;
+  --card:#0b1f38cc;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; margin:0; font-family: CairoLocal, system-ui, sans-serif; }
+
+body{
+  overflow:hidden;
+  background: radial-gradient(1200px 700px at 70% 15%, #123a66 0%, #081a32 55%, #051023 100%);
+  color:#fff;
+}
+
+/* خلفية صورة (اختياري) */
+.bg{
+  position:fixed; inset:0;
+  background:
+    radial-gradient(800px 500px at 50% 20%, rgba(255,255,255,.08), transparent 60%),
+    url("assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.1) contrast(1.05);
+  opacity: .28; /* قلل/زود حسب ذوقك */
+}
+
+.vignette{
+  position:fixed; inset:0;
+  background: radial-gradient(circle at center, transparent 35%, rgba(0,0,0,.55) 78%, rgba(0,0,0,.75) 100%);
+  pointer-events:none;
+}
+
+#stars{
+  position:fixed; inset:0;
+  width:100%; height:100%;
+}
+
+/* الهلال */
+.crescent-wrap{
+  position:fixed;
+  left: 10%;
+  top: 14%;
+  width: 210px;
+  height: 210px;
+  pointer-events:none;
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.crescent{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 0 rgba(0,0,0,0);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: radial-gradient(circle at 30% 30%, #fff2c9 0%, var(--gold) 35%, var(--gold2) 70%, #b67d2b 100%);
+  filter: drop-shadow(0 0 16px rgba(247,211,122,.35));
+}
+
+.crescent::after{
+  content:"";
+  position:absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  left: 42px; /* بيعمل شكل الهلال */
+  top: 0;
+  background: rgba(6, 21, 42, 1);
+}
+
+.crescent-glow{
+  position:absolute; inset:0;
+  border-radius: 50%;
+  filter: blur(18px);
+  background: radial-gradient(circle at 30% 30%, rgba(247,211,122,.35), transparent 55%);
+  animation: glow 3.8s ease-in-out infinite;
+}
+
+/* الفوانيس */
+.lanterns{
+  position:fixed; inset:0;
+  pointer-events:none;
+}
+
+.lantern{
+  width: 66px;
+  height: 120px;
+  position:absolute;
+  top:-140px;
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,0)),
+    radial-gradient(circle at 50% 40%, rgba(247,211,122,.9), rgba(247,211,122,.15) 60%, rgba(0,0,0,0) 72%),
+    linear-gradient(180deg, #2b1a06, #0f0b07);
+  box-shadow: 0 0 22px rgba(247,211,122,.25);
+  border: 1px solid rgba(247,211,122,.25);
+}
+
+.lantern::before{
+  content:"";
+  position:absolute;
+  top:-22px; left:50%;
+  transform:translateX(-50%);
+  width: 10px; height: 22px;
+  background: rgba(247,211,122,.45);
+  border-radius: 6px;
+  box-shadow: 0 0 16px rgba(247,211,122,.35);
+}
+
+.lantern::after{
+  content:"";
+  position:absolute;
+  bottom:-8px; left:50%;
+  transform:translateX(-50%);
+  width: 36px; height: 10px;
+  background: rgba(217,168,74,.35);
+  border-radius: 999px;
+  filter: blur(1px);
+}
+
+.l1{ left: 22%; animation: lanternFall 10s linear infinite; opacity:.95; }
+.l2{ left: 44%; animation: lanternFall 12s linear infinite; opacity:.85; transform: scale(.9); }
+.l3{ left: 66%; animation: lanternFall 11s linear infinite; opacity:.9; transform: scale(1.05); }
+.l4{ left: 82%; animation: lanternFall 13s linear infinite; opacity:.8; transform: scale(.88); }
+
+/* الكارت */
+.card{
+  position:fixed;
+  inset: 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap: 18px;
+  padding: 24px;
+  text-align:center;
+}
+
+.card > * { max-width: 760px; width: min(760px, 92vw); }
+
+.calligraphy{
+  font-size: clamp(42px, 5vw, 72px);
+  letter-spacing: .5px;
+  color: var(--gold);
+  text-shadow:
+    0 0 18px rgba(247,211,122,.25),
+    0 0 44px rgba(247,211,122,.15);
+  animation: popIn .9s ease-out both;
+}
+
+.msg{
+  background: var(--card);
+  border: 1px solid rgba(247,211,122,.20);
+  border-radius: 18px;
+  padding: 18px 18px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+  animation: fadeUp 1s ease-out .12s both;
+}
+
+.line1{
+  font-size: clamp(22px, 2.6vw, 34px);
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.line2{
+  font-size: clamp(15px, 2.2vw, 28px);
+  color: rgba(255,255,255,.92);
+}
+
+.controls{
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+  justify-content:center;
+  animation: fadeUp 1s ease-out .18s both;
+}
+
+input{
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(8, 26, 50, .55);
+  color:#fff;
+  outline:none;
+  width: min(380px, 92vw);
+}
+
+button{
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(247,211,122,.25);
+  background: linear-gradient(180deg, rgba(247,211,122,.18), rgba(247,211,122,.08));
+  color:#fff;
+  cursor:pointer;
+  transition: transform .15s ease, opacity .15s ease;
+}
+button:hover{ transform: translateY(-1px); }
+button:active{ transform: translateY(0px) scale(.99); opacity:.92; }
+
+button.ghost{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.audioBar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  flex-wrap:wrap;
+  opacity:.95;
+  animation: fadeUp 1s ease-out .24s both;
+}
+
+.audioBtn{
+  border: 1px solid rgba(247,211,122,.32);
+}
+
+.hint{
+  font-size: 12px;
+  opacity:.85;
+}
+
+/* أنيميشنز */
+@keyframes lanternFall{
+  0%   { transform: translateY(-160px) rotate(-2deg); filter: brightness(1.0); }
+  30%  { transform: translateY(30vh) rotate(2deg); filter: brightness(1.05); }
+  60%  { transform: translateY(70vh) rotate(-2deg); }
+  100% { transform: translateY(115vh) rotate(2deg); }
+}
+@keyframes floaty{
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(10px); }
+}
+@keyframes glow{
+  0%,100%{ opacity:.8; transform: scale(1); }
+  50%{ opacity:1; transform: scale(1.03); }
+}
+@keyframes popIn{
+  from{ transform: translateY(10px) scale(.98); opacity:0; }
+  to{ transform: translateY(0) scale(1); opacity:1; }
+}
+@keyframes fadeUp{
+  from{ transform: translateY(10px); opacity:0; }
+  to{ transform: translateY(0); opacity:1; }
+}
+
+/* موبايل */
+@media (max-width: 520px){
+  .crescent-wrap{ left: 4%; top: 10%; width: 160px; height: 160px; }
+  .crescent, .crescent::after{ width: 140px; height: 140px; }
+  .crescent{ left: 10px; top: 10px; }
+  .crescent::after{ left: 34px; }
+}

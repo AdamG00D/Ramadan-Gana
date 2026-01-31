@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>إنشاء تهنئة رمضان</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="card">
+    <h1 class="calligraphy">أنشئ تهنئتك الرمضانية <span aria-label="moon">🌙</span></h1>
+    <form id="greetingForm">
+      <div class="controls" style="flex-wrap:wrap;gap:12px;justify-content:center;">
+        <input id="recipientName" type="text" placeholder="اسم الشخص (مثال: أحمد) أو اتركه فارغًا" autocomplete="name" style="max-width:220px;"/>
+        <div class="select-group">
+          <label for="recipientType">النوع:</label>
+          <select id="recipientType">
+            <option value="male">ذكر 👦🏻</option>
+            <option value="female">أنثى 👧🏻</option>
+            <option value="all">الجميع 👨‍👩‍👧‍👦</option>
+          </select>
+        </div>
+      </div>
+      <div class="controls radio-group" style="gap:22px;justify-content:center;">
+        <label class="radio-opt"><input type="radio" name="greetingType" value="default" checked> تهنئة افتراضية 🎉</label>
+        <label class="radio-opt"><input type="radio" name="greetingType" value="custom"> تهنئة مخصصة ✍️</label>
+      </div>
+      <div class="controls" id="defaultGreetings" style="justify-content:center;">
+        <select id="defaultGreetingSelect">
+          <option value="1">كل سنة وأنت طيب يا ... 🌙✨</option>
+          <option value="2">أسأل الله أن يبلغك رمضان وأنت في أتم الصحة والعافية 🤲</option>
+          <option value="3">رمضان مبارك عليك وعلى أحبابك 💛</option>
+        </select>
+      </div>
+      <div class="controls" id="customGreetingDiv" style="display:none;justify-content:center;">
+        <input id="customGreeting" type="text" placeholder="اكتب نص التهنئة هنا" maxlength="100" style="max-width:320px;"/>
+      </div>
+      <div class="controls" style="justify-content:center;gap:18px;">
+        <button type="submit" id="generateBtn">إنشاء رابط التهنئة</button>
+      </div>
+    </form>
+    <div class="controls" id="resultDiv" style="display:none;flex-direction:column;align-items:center;gap:10px;">
+      <input id="resultLink" type="text" readonly style="width:80%"/>
+      <div style="display:flex;gap:10px;justify-content:center;">
+        <button id="copyResultBtn">نسخ الرابط</button>
+        <button id="showGreetingBtn">عرض التهنئة</button>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
